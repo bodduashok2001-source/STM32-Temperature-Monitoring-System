@@ -1,0 +1,12 @@
+*.o
+*.d
+*.crf
+*.axf
+*.map
+*.lst
+*.dep
+
+Debug/
+Release/
+Objects/
+Listings/

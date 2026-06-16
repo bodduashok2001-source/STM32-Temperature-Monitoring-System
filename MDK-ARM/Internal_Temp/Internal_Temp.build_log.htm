@@ -1,0 +1,115 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ashok boddu.ashok2001@gmail.com, Bosch, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.26.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+D:\Subjects\ESD_Lab\Assignment2\Internal_Temp\MDK-ARM\Internal_Temp.uvprojx
+Project File Date:  11/08/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Internal_Temp'
+compiling stm32f4xx_ll_adc.c...
+Warning: C3910W: Old syntax, please use '-U'.
+assembling startup_stm32f407xx.s...
+compiling stm32f4xx_it.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling main.c...
+Warning: C3910W: Old syntax, please use '-U'.
+../Core/Src/main.c(153): warning:  #223-D: function "snprintf" declared implicitly
+  				int n = snprintf(TxBuffer, sizeof(TxBuffer), "Temperature=%.2fC\r\n", Temperature);
+../Core/Src/main.c(470): warning:  #223-D: function "sprintf" declared implicitly
+          sprintf(TxBuffer, "Measurement STOPPED\r\n");
+../Core/Src/main.c(489): warning:  #223-D: function "sprintf" declared implicitly
+              sprintf(TxBuffer, "Measurement STARTED\r\n");
+../Core/Src/main.c(506): warning:  #223-D: function "sprintf" declared implicitly
+                  sprintf(TxBuffer, "Session %d Max Temperature = %.2fC\r\n", i+1, session_max[i]);
+../Core/Src/main.c: 4 warnings, 0 errors
+compiling stm32f4xx_hal_adc_ex.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_msp.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_adc.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_rcc_ex.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_rcc.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_flash_ramfunc.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_flash.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_flash_ex.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_gpio.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_dma.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_pwr.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_dma_ex.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_cortex.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_exti.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_pwr_ex.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_tim_ex.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_uart.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling stm32f4xx_hal_tim.c...
+Warning: C3910W: Old syntax, please use '-U'.
+compiling system_stm32f4xx.c...
+Warning: C3910W: Old syntax, please use '-U'.
+linking...
+Program Size: Code=15276 RO-data=632 RW-data=32 ZI-data=2416  
+FromELF: creating hex file...
+"Internal_Temp\Internal_Temp.axf" - 0 Error(s), 27 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.0.pack
+                Keil.STM32F4xx_DFP.2.17.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Internal_Temp
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+Build Time Elapsed:  00:00:23
+</pre>
+</body>
+</html>
